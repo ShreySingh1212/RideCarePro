@@ -1,0 +1,201 @@
+/* ==========================================================
+   RideCarePro v2.0
+   Base Styles
+========================================================== */
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* ---------- Reset ---------- */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* ---------- Root ---------- */
+
+html{
+    scroll-behavior:smooth;
+}
+
+/* ---------- Body ---------- */
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:var(--bg-dark);
+
+    color:var(--white);
+
+    overflow-x:hidden;
+
+    line-height:1.7;
+
+}
+
+/* ---------- Images ---------- */
+
+img{
+
+    max-width:100%;
+
+    display:block;
+
+}
+
+/* ---------- Links ---------- */
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+    transition:var(--transition);
+
+}
+
+/* ---------- List ---------- */
+
+ul{
+
+    list-style:none;
+
+}
+
+/* ---------- Buttons ---------- */
+
+button{
+
+    border:none;
+
+    outline:none;
+
+    cursor:pointer;
+
+    font-family:inherit;
+
+}
+
+/* ---------- Inputs ---------- */
+
+input,
+textarea,
+select{
+
+    font-family:inherit;
+
+    outline:none;
+
+}
+
+/* ---------- Typography ---------- */
+
+h1{
+
+    font-size:4rem;
+
+    font-weight:700;
+
+}
+
+h2{
+
+    font-size:3rem;
+
+    font-weight:700;
+
+}
+
+h3{
+
+    font-size:2rem;
+
+    font-weight:600;
+
+}
+
+h4{
+
+    font-size:1.5rem;
+
+}
+
+h5{
+
+    font-size:1.2rem;
+
+}
+
+h6{
+
+    font-size:1rem;
+
+}
+
+p{
+
+    color:var(--text);
+
+    font-size:1rem;
+
+}
+
+/* ---------- Section ---------- */
+
+section{
+
+    padding:100px 0;
+
+}
+
+/* ---------- Container ---------- */
+
+.container{
+
+    width:min(1200px,90%);
+
+    margin:auto;
+
+}
+
+/* ---------- Selection ---------- */
+
+::selection{
+
+    background:var(--primary);
+
+    color:#fff;
+
+}
+
+/* ---------- Scrollbar ---------- */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#111;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:var(--primary);
+
+    border-radius:50px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:var(--primary-light);
+
+}

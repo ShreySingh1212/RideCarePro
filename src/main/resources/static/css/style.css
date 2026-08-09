@@ -1,0 +1,841 @@
+/*====================================
+
+        GOOGLE FONT
+
+=====================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+    background:#090909;
+    color:white;
+    overflow-x:hidden;
+
+}
+
+/*==============================
+
+SCROLLBAR
+
+===============================*/
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#111;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#ff6b00;
+    border-radius:20px;
+
+}
+
+/*==============================
+
+NAVBAR
+
+===============================*/
+
+.custom-navbar{
+
+    background:rgba(0,0,0,.45);
+
+    backdrop-filter:blur(18px);
+
+    padding:18px 0;
+
+    transition:.4s;
+
+}
+
+.navbar-brand{
+
+    display:flex;
+
+    align-items:center;
+
+    text-decoration:none;
+
+}
+
+.navbar-brand img{
+
+    width:65px;
+
+    margin-right:12px;
+
+}
+
+.navbar-brand span{
+
+    font-size:34px;
+
+    color:#ff6b00;
+
+    font-family:'Bebas Neue';
+
+    letter-spacing:2px;
+
+}
+
+.nav-link{
+
+    color:white!important;
+
+    margin:0 14px;
+
+    font-size:17px;
+
+    transition:.4s;
+
+}
+
+.nav-link:hover{
+
+    color:#ff6b00!important;
+
+}
+
+.login-btn{
+
+    color:white;
+
+    border:2px solid #ff6b00;
+
+    border-radius:40px;
+
+    padding:12px 28px;
+
+    margin-left:25px;
+
+}
+
+.signup-btn{
+
+    background:#ff6b00;
+
+    color:white;
+
+    border-radius:40px;
+
+    padding:12px 28px;
+
+    margin-left:15px;
+
+}
+
+.signup-btn:hover{
+
+    background:#ff8d32;
+
+}
+
+/*==============================
+
+HERO
+
+===============================*/
+
+.hero{
+
+    height:100vh;
+
+    position:relative;
+
+    background:#090909;
+
+}
+
+.overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+        90deg,
+        rgba(0,0,0,.92),
+        rgba(0,0,0,.55),
+        rgba(0,0,0,.15)
+    );
+
+}
+
+.hero-text{
+
+    position:relative;
+
+    z-index:10;
+
+}
+
+.hero-text h5{
+
+    color:#ff6b00;
+
+    letter-spacing:5px;
+
+    font-size:18px;
+
+}
+
+.hero-text h1{
+
+    font-family:'Bebas Neue';
+
+    font-size:105px;
+
+    line-height:100px;
+
+    margin:25px 0;
+
+    letter-spacing:3px;
+
+}
+
+.hero-text p{
+
+    color:#d5d5d5;
+
+    line-height:34px;
+
+    font-size:18px;
+
+    width:90%;
+
+}
+
+.hero-bike{
+
+    width:100%;
+
+    animation:floatBike 4s ease-in-out infinite;
+
+}
+
+.hero-buttons{
+
+    margin-top:40px;
+
+}
+
+.hero-btn{
+
+    background:#ff6b00;
+
+    color:white;
+
+    padding:16px 38px;
+
+    border-radius:50px;
+
+    margin-right:20px;
+
+    font-weight:600;
+
+    transition:.4s;
+
+}
+
+.hero-btn:hover{
+
+    background:white;
+
+    color:black;
+
+    transform:translateY(-5px);
+
+}
+
+.hero-btn2{
+
+    border:2px solid white;
+
+    color:white;
+
+    padding:16px 38px;
+
+    border-radius:50px;
+
+}
+
+.hero-btn2:hover{
+
+    background:white;
+
+    color:black;
+
+}
+
+/*==============================
+
+ANIMATION
+
+===============================*/
+
+@keyframes floatBike{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-20px);
+
+}
+
+100%{
+
+transform:translateY(0);
+
+}
+
+}
+
+/*==============================
+
+SECTION
+
+===============================*/
+
+section{
+
+    padding:110px 0;
+
+}
+
+.section-heading{
+
+    text-align:center;
+
+    margin-bottom:70px;
+
+}
+
+.section-heading h5{
+
+    color:#ff6b00;
+
+    letter-spacing:4px;
+
+}
+
+.section-heading h2{
+
+    font-family:'Bebas Neue';
+
+    font-size:62px;
+
+    margin-top:12px;
+
+    letter-spacing:2px;
+
+}
+
+.section-heading p{
+
+    width:60%;
+
+    margin:auto;
+
+    color:#bbb;
+
+    margin-top:15px;
+
+    line-height:32px;
+
+}
+/*====================================
+            ABOUT SECTION
+====================================*/
+
+.about{
+    background:#111;
+}
+
+.about-image{
+    width:100%;
+    border-radius:25px;
+    transition:.5s;
+    box-shadow:0 25px 60px rgba(0,0,0,.5);
+}
+
+.about-image:hover{
+    transform:scale(1.03);
+}
+
+.about h5{
+    color:#ff6b00;
+    letter-spacing:4px;
+}
+
+.about h2{
+    font-family:'Bebas Neue';
+    font-size:58px;
+    margin:15px 0;
+    letter-spacing:2px;
+}
+
+.about p{
+    color:#cfcfcf;
+    line-height:32px;
+}
+
+.feature-box{
+    background:#1a1a1a;
+    padding:28px;
+    border-radius:20px;
+    text-align:center;
+    transition:.4s;
+    border:1px solid rgba(255,255,255,.08);
+}
+
+.feature-box:hover{
+    transform:translateY(-10px);
+    background:#ff6b00;
+}
+
+.feature-box i{
+    font-size:42px;
+    margin-bottom:18px;
+    color:#ff6b00;
+    transition:.4s;
+}
+
+.feature-box:hover i{
+    color:white;
+}
+
+.feature-box h4{
+    font-size:20px;
+}
+
+/*====================================
+            SERVICES
+====================================*/
+
+.services{
+    background:#090909;
+}
+
+.service-card{
+    background:#171717;
+    border-radius:22px;
+    overflow:hidden;
+    transition:.5s;
+    border:1px solid rgba(255,255,255,.08);
+}
+
+.service-card:hover{
+    transform:translateY(-12px);
+    box-shadow:0 20px 50px rgba(255,107,0,.35);
+}
+
+.service-card img{
+    width:100%;
+    height:240px;
+    object-fit:cover;
+    transition:.5s;
+}
+
+.service-card:hover img{
+    transform:scale(1.08);
+}
+
+.service-content{
+    padding:28px;
+}
+
+.service-content i{
+    font-size:42px;
+    color:#ff6b00;
+    margin-bottom:20px;
+}
+
+.service-content h3{
+    font-size:28px;
+    margin-bottom:15px;
+}
+
+.service-content p{
+    color:#bfbfbf;
+    line-height:28px;
+}
+
+.service-btn{
+    display:inline-block;
+    margin-top:18px;
+    padding:12px 28px;
+    background:#ff6b00;
+    color:white;
+    border-radius:40px;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.service-btn:hover{
+    background:white;
+    color:#111;
+}
+
+/*====================================
+          WHY CHOOSE US
+====================================*/
+
+.why-us{
+    background:#111;
+}
+
+.why-card{
+    background:#1b1b1b;
+    padding:40px 25px;
+    border-radius:20px;
+    transition:.4s;
+    border:1px solid rgba(255,255,255,.06);
+}
+
+.why-card:hover{
+    background:#ff6b00;
+    transform:translateY(-10px);
+}
+
+.why-card i{
+    font-size:50px;
+    color:#ff6b00;
+    margin-bottom:20px;
+    transition:.3s;
+}
+
+.why-card:hover i{
+    color:white;
+}
+
+.why-card h4{
+    margin-bottom:15px;
+}
+
+.why-card p{
+    color:#d7d7d7;
+}
+
+/*====================================
+             STATISTICS
+====================================*/
+
+.stats{
+    background:linear-gradient(135deg,#ff6b00,#ff8f30);
+    text-align:center;
+}
+
+.stats h2{
+    font-size:58px;
+    font-family:'Bebas Neue';
+    letter-spacing:2px;
+}
+
+.stats p{
+    font-size:20px;
+    margin-top:10px;
+}
+
+/*====================================
+             GALLERY
+====================================*/
+
+.gallery{
+    background:#090909;
+}
+
+.gallery-img{
+    width:100%;
+    height:270px;
+    object-fit:cover;
+    border-radius:20px;
+    transition:.4s;
+    cursor:pointer;
+}
+
+.gallery-img:hover{
+    transform:scale(1.05);
+    box-shadow:0 15px 40px rgba(255,107,0,.45);
+}
+/*====================================
+            TEAM
+====================================*/
+
+.team{
+    background:#111;
+}
+
+.team-card{
+    background:#1a1a1a;
+    border-radius:20px;
+    overflow:hidden;
+    transition:.4s;
+    text-align:center;
+    border:1px solid rgba(255,255,255,.08);
+}
+
+.team-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 45px rgba(255,107,0,.35);
+}
+
+.team-card img{
+    width:100%;
+    height:360px;
+    object-fit:cover;
+}
+
+.team-info{
+    padding:30px;
+}
+
+.team-info h3{
+    font-size:28px;
+    margin-bottom:8px;
+}
+
+.team-info span{
+    color:#ff6b00;
+    font-weight:600;
+}
+
+.team-info p{
+    color:#cfcfcf;
+    margin:18px 0;
+    line-height:28px;
+}
+
+.social-icons a{
+    width:45px;
+    height:45px;
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:50%;
+    background:#2b2b2b;
+    color:white;
+    margin:6px;
+    transition:.3s;
+    text-decoration:none;
+}
+
+.social-icons a:hover{
+    background:#ff6b00;
+}
+
+/*====================================
+        TESTIMONIAL
+====================================*/
+
+.testimonial{
+    background:#090909;
+}
+
+.testimonial-card{
+    background:#181818;
+    padding:35px;
+    border-radius:20px;
+    transition:.4s;
+    text-align:center;
+}
+
+.testimonial-card:hover{
+    transform:translateY(-10px);
+}
+
+.testimonial-card i{
+    color:#ff6b00;
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+.testimonial-card p{
+    color:#d0d0d0;
+    line-height:30px;
+}
+
+.testimonial-card h4{
+    margin-top:20px;
+}
+
+.stars{
+    color:#FFD700;
+    font-size:20px;
+    margin-top:12px;
+}
+
+/*====================================
+            CONTACT
+====================================*/
+
+.contact{
+    background:#111;
+}
+
+.contact h5{
+    color:#ff6b00;
+    letter-spacing:4px;
+}
+
+.contact h2{
+    font-family:'Bebas Neue';
+    font-size:60px;
+    margin:20px 0;
+}
+
+.contact p{
+    color:#cfcfcf;
+    line-height:32px;
+}
+
+.contact .form-control{
+    background:#1d1d1d;
+    border:none;
+    color:white;
+    padding:18px;
+    border-radius:12px;
+}
+
+.contact .form-control:focus{
+    background:#222;
+    color:white;
+    box-shadow:0 0 0 3px rgba(255,107,0,.25);
+}
+
+.contact textarea{
+    resize:none;
+}
+
+/*====================================
+            FOOTER
+====================================*/
+
+footer{
+    background:#000;
+    padding:35px 0;
+    border-top:1px solid rgba(255,255,255,.08);
+}
+
+footer h2{
+    color:#ff6b00;
+    font-family:'Bebas Neue';
+    font-size:42px;
+}
+
+footer p{
+    color:#bdbdbd;
+    margin:0;
+}
+
+/*====================================
+        HOVER EFFECTS
+====================================*/
+
+img{
+    transition:.4s;
+}
+
+img:hover{
+    transform:scale(1.02);
+}
+
+button,
+.btn,
+a{
+    transition:.3s;
+}
+
+/*====================================
+        RESPONSIVE
+====================================*/
+
+@media(max-width:991px){
+
+.hero-text{
+    text-align:center;
+}
+
+.hero-text h1{
+    font-size:70px;
+    line-height:70px;
+}
+
+.hero-text p{
+    width:100%;
+}
+
+.hero-bike{
+    margin-top:40px;
+}
+
+.section-heading h2{
+    font-size:45px;
+}
+
+.about h2{
+    font-size:45px;
+}
+
+.contact h2{
+    font-size:45px;
+}
+
+footer{
+    text-align:center;
+}
+
+footer .text-end{
+    text-align:center!important;
+    margin-top:15px;
+}
+
+}
+
+@media(max-width:576px){
+
+.hero-text h1{
+    font-size:52px;
+    line-height:55px;
+}
+
+.section-heading h2{
+    font-size:34px;
+}
+
+.navbar-brand span{
+    font-size:24px;
+}
+
+.hero-btn,
+.hero-btn2{
+    display:block;
+    margin:12px auto;
+    width:220px;
+}
+
+}

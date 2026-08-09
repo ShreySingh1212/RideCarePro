@@ -1,0 +1,54 @@
+/* ==========================================
+   RideCarePro Design Tokens
+   Version : 2.0
+========================================== */
+
+:root{
+
+    /* Brand */
+
+    --primary:#ff6b00;
+    --primary-light:#ff8c29;
+    --primary-dark:#d95a00;
+
+    /* Background */
+
+    --bg-dark:#0b0b0b;
+    --bg-card:#171717;
+    --bg-light:#222222;
+
+    /* Text */
+
+    --white:#ffffff;
+    --text:#d8d8d8;
+    --muted:#9e9e9e;
+
+    /* Borders */
+
+    --border:rgba(255,255,255,.08);
+
+    /* Glass */
+
+    --glass:rgba(255,255,255,.06);
+
+    --glass-border:rgba(255,255,255,.12);
+
+    /* Shadow */
+
+    --shadow-lg:0 20px 60px rgba(0,0,0,.45);
+
+    --shadow-md:0 10px 30px rgba(0,0,0,.35);
+
+    --shadow-sm:0 5px 15px rgba(0,0,0,.25);
+
+    /* Radius */
+
+    --radius-lg:24px;
+    --radius-md:16px;
+    --radius-sm:10px;
+
+    /* Transition */
+
+    --transition:.35s ease;
+
+}

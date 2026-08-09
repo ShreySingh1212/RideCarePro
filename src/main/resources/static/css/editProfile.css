@@ -1,0 +1,433 @@
+/* =====================================================
+                    GOOGLE FONT
+===================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+
+/* =====================================================
+                    RESET
+===================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+:root{
+
+    --primary:#ff7a00;
+    --primary-dark:#ff5e00;
+    --dark:#0f172a;
+    --card:rgba(30,41,59,.72);
+    --border:rgba(255,255,255,.08);
+    --text:#f8fafc;
+    --text-light:#cbd5e1;
+    --shadow:0 15px 40px rgba(0,0,0,.35);
+
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#0f172a;
+
+    color:#fff;
+
+    min-height:100vh;
+
+    overflow-x:hidden;
+
+}
+body::before{
+
+    content:"";
+
+    position:fixed;
+
+    width:500px;
+
+    height:500px;
+
+    border-radius:50%;
+
+    background:rgba(255,122,0,.18);
+
+    filter:blur(140px);
+
+    top:-150px;
+
+    left:-100px;
+
+    z-index:-2;
+
+}
+
+body::after{
+
+    content:"";
+
+    position:fixed;
+
+    width:450px;
+
+    height:450px;
+
+    border-radius:50%;
+
+    background:#2563eb22;
+
+    filter:blur(130px);
+
+    bottom:-120px;
+
+    right:-120px;
+
+    z-index:-2;
+
+}
+
+.background-blur{
+
+    position:fixed;
+
+    inset:0;
+
+    background:
+
+    radial-gradient(circle at top right,
+    rgba(255,122,0,.08),
+    transparent 40%),
+
+    radial-gradient(circle at bottom left,
+    rgba(37,99,235,.08),
+    transparent 40%);
+
+    z-index:-3;
+
+}
+.edit-wrapper{
+
+    width:min(950px,92%);
+
+    margin:auto;
+
+    padding:50px 0 70px;
+
+}
+.glass-card{
+
+    background:var(--card);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid var(--border);
+
+    border-radius:24px;
+
+    padding:40px;
+
+    box-shadow:var(--shadow);
+
+}
+/* =====================================================
+                    HERO
+===================================================== */
+
+.edit-hero{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:35px;
+
+    gap:20px;
+
+}
+
+.edit-hero h1{
+
+    font-size:2.3rem;
+
+    margin-bottom:10px;
+
+    font-weight:700;
+
+}
+
+.edit-hero i{
+
+    color:var(--primary);
+
+}
+
+.edit-hero p{
+
+    color:var(--text-light);
+
+}
+.back-btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:14px 24px;
+
+    text-decoration:none;
+
+    color:#fff;
+
+    background:rgba(255,255,255,.08);
+
+    border-radius:12px;
+
+    transition:.35s;
+
+}
+
+.back-btn:hover{
+
+    background:rgba(255,122,0,.15);
+
+    transform:translateY(-3px);
+
+}
+/* =====================================================
+                    FORM
+===================================================== */
+
+.form-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:25px;
+
+}
+
+.form-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.form-group:last-child{
+
+    grid-column:1/-1;
+
+}
+/* =====================================================
+                    INPUT FIELDS
+===================================================== */
+
+.form-group label{
+
+    margin-bottom:10px;
+
+    font-weight:600;
+
+    color:var(--text);
+
+}
+
+.form-group input,
+.form-group textarea{
+
+    width:100%;
+
+    padding:15px 18px;
+
+    border-radius:14px;
+
+    border:1px solid var(--border);
+
+    background:rgba(255,255,255,.05);
+
+    color:#fff;
+
+    font-size:1rem;
+
+    outline:none;
+
+    transition:.35s;
+
+    font-family:'Poppins',sans-serif;
+
+}
+
+.form-group textarea{
+
+    resize:vertical;
+
+    min-height:140px;
+
+}
+/* =====================================================
+                    FOCUS EFFECT
+===================================================== */
+
+.form-group input:focus,
+.form-group textarea:focus{
+
+    border-color:var(--primary);
+
+    background:rgba(255,122,0,.08);
+
+    box-shadow:0 0 0 4px rgba(255,122,0,.15);
+
+}
+/* =====================================================
+                    BUTTONS
+===================================================== */
+
+.button-group{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    gap:18px;
+
+    margin-top:35px;
+
+    flex-wrap:wrap;
+
+}
+
+.save-btn{
+
+    border:none;
+
+    cursor:pointer;
+
+    padding:15px 28px;
+
+    border-radius:14px;
+
+    font-size:1rem;
+
+    font-weight:600;
+
+    color:#fff;
+
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        var(--primary-dark)
+    );
+
+    transition:.35s;
+
+}
+
+.save-btn:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 15px 30px rgba(255,122,0,.30);
+
+}
+
+.cancel-btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:15px 28px;
+
+    border-radius:14px;
+
+    text-decoration:none;
+
+    color:#fff;
+
+    background:rgba(255,255,255,.08);
+
+    transition:.35s;
+
+}
+
+.cancel-btn:hover{
+
+    background:rgba(255,255,255,.14);
+
+    transform:translateY(-4px);
+
+}
+/* =====================================================
+                    CARD EFFECT
+===================================================== */
+
+.glass-card{
+
+    transition:.35s;
+
+}
+
+.glass-card:hover{
+
+    transform:translateY(-5px);
+
+}
+/* =====================================================
+                    RESPONSIVE
+===================================================== */
+
+@media(max-width:768px){
+
+    .edit-wrapper{
+
+        width:95%;
+
+    }
+
+    .edit-hero{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+    }
+
+    .edit-hero h1{
+
+        font-size:1.9rem;
+
+    }
+
+    .form-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .button-group{
+
+        flex-direction:column;
+
+    }
+
+    .save-btn,
+    .cancel-btn{
+
+        width:100%;
+
+        justify-content:center;
+
+    }
+
+}
