@@ -84,7 +84,7 @@ public class CustomerController {
                 </div>
                 """.formatted(customer.getFullName());
 
-        emailService.sendHtmlEmail(customer.getEmail(), subject, html);
+        try { emailService.sendHtmlEmail(customer.getEmail(), subject, html); } catch (Exception e) { e.printStackTrace(); }
 
         model.addAttribute("success", "Registration Successful. Please Login.");
 
