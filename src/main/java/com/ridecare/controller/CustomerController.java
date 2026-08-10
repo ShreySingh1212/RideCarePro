@@ -74,7 +74,7 @@ public class CustomerController {
                     <p>Your account has been created successfully.</p>
                     <p>You can now login and book bike services online.</p>
                     <br>
-                    <a href='http://localhost:9090/login'
+                    <a href='https://ridecarepro-2.onrender.com/login'
                        style='background:#2563eb;color:white;padding:10px 20px;
                               text-decoration:none;border-radius:5px'>
                        Login Now

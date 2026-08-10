@@ -7,6 +7,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
+import org.springframework.security.crypto.password.PasswordEncoder;
+
 import com.ridecare.entity.Customer;
 import com.ridecare.service.CustomerService;
 
@@ -26,6 +28,10 @@ public class LoginController {
 
     @Autowired
     private AdminService adminService;
+    
+    @Autowired 
+    private
+    PasswordEncoder passwordEncoder;
 
     @PostMapping("/login")
     public String login(@RequestParam String role,
@@ -40,7 +46,7 @@ public class LoginController {
             Optional<Customer> customer = customerService.login(email);
 
             if(customer.isPresent()
-                    && customer.get().getPassword().equals(password)){
+                    && passwordEncoder.matches(password, customer.get().getPassword())){
 
                 session.setAttribute("loggedCustomer", customer.get());
 
