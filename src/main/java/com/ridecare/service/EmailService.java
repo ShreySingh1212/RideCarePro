@@ -22,7 +22,7 @@ public class EmailService {
                     new MimeMessageHelper(message, true, "UTF-8");
 
             // Verified sender email from Brevo
-            helper.setFrom("b4e204001@smtp-brevo.com", "RideCarePro");
+            helper.setFrom("ridecareproteam@gmail.com", "RideCarePro");
 
             helper.setTo(to);
 
@@ -30,6 +30,8 @@ public class EmailService {
 
             helper.setText(html, true);
 
+            System.out.println("SENDING EMAIL TO: " + to);
+            
             mailSender.send(message);
 
             System.out.println("✅ Email sent successfully to: " + to);
